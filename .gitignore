@@ -180,17 +180,14 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 
-# Documentation
 4_telegram_space_photos.txt
 
-# Output / generated content
 space_gallery/
 
 # OS junk
 .DS_Store
 Thumbs.db
-
 .venv/
-
 1_bank_guard_panel.txt
 Django-ORM-standalone-master.zip
+.replit

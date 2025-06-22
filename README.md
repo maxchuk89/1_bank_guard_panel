@@ -31,22 +31,20 @@ psycopg2==2.9.3
 
 ## Environment variables(Переменные окружения)
 
-Используются настройки подключения к базе данных. Они прописаны напрямую в `settings.py`.
+Перед запуском программы создайте файл `.env` в корне проекта и укажите в нём следующие переменные:
 
-### How to get(Как получить)
-
-```python
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'HOST': 'checkpoint.devman.org',
-        'PORT': 5434,
-        'NAME': 'checkpoint',
-        'USER': 'guard',
-        'PASSWORD': 'osim5',
-    }
-}
 ```
+DB_HOST=адрес_сервера_базы_данных
+DB_PORT=порт_подключения
+DB_NAME=имя_базы_данных
+DB_USER=имя_пользователя
+DB_PASSWORD=пароль_пользователя
+SECRET_KEY=ключ_для_криптоподписей_Django
+```
+
+Все переменные автоматически загружаются в `settings.py` с помощью `os.getenv` и `python-dotenv`.
+
+Файл `.env` добавлен в `.gitignore`, не размещайте его в публичном доступе.
 
 ---
 

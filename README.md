@@ -20,13 +20,6 @@ PostgreSQL (удалённый, настройки ниже)
 pip install -r requirements.txt
 ```
 
-Содержимое:
-
-```
-Django==3.2.12  
-psycopg2==2.9.3
-```
-
 ---
 
 ## Environment variables(Переменные окружения)
